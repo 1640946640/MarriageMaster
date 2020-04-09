@@ -5,7 +5,7 @@ Version: 93
 #为了简化定制和翻译过程，请查看编辑器： http://ptp.pcgamingfreaks.at
 Language:
   NotFromConsole: "&c这条指令不能在控制台中使用！"
-  # Global Wildcards: <heart> and <smallheart>
+  # 全局变量/符号: <heart> and <smallheart>
   Ingame:
     NoPermission: "[\"\",{\"text\":\"您没有权限这样做。\",\"color\":\"red\"}]"
     NaN: "[\"\",{\"text\":\"输入值不是数字！\",\"color\":\"red\"}]"
@@ -23,7 +23,7 @@ Language:
       PartnerOffline: "[\"\",{\"text\":\"您的伴侣不在线。\",\"color\":\"gray\"}]"
       AllPartnersOffline: "[\"\",{\"text\":\"所有情侣都不在线。\",\"color\":\"gray\"}]"
       PartnerOnlineMulti: "[\"\",{\"text\":\"以下情侣在线: \",\"color\":\"green\"},{\"text\":\"{OnlinePartners}\",\"color\":\"white\"}]"
-      # Options: {Name}, {DisplayName}.    Keep in mind display names can contain colors!  No JSON!!!
+      # 名字变量选择: {Name}(显示名字|不带称号), {DisplayName}(显示名字|带称号).    请记住名称显示可以保持颜色！没有Json!
       MultiOnlineFormat: "{DisplayName}"
       # No JSON!!!
       MultiOnlineSeparator: "&r, "
@@ -75,11 +75,11 @@ Language:
       GotHugged_SendMethod: "action_bar"
       TooFarAway: "[\"\",{\"text\":\"您离您的伴侣太远了，您抱不到Ta。 (Max {Distance} blocks)\",\"color\":\"red\"}]"
     Seen:
-      # Options: {Name}, {DisplayName}
+      # 名字变量选择: {Name}(显示名字|不带称号), {DisplayName}(显示名字|带称号). 
       CurrentlyOnline: "[\"\",{\"text\":\"{DisplayName} 已经\",\"extra\":[{\"text\":\"上线了\",\"color\":\"green\"},{\"text\":\".\"}]}]"
       # Options: {Name}, {Date}, {Count}, {CountTotalDays}
       LastSeen: "[\"\",{\"text\":\"{Name}上一次上线是在\",\"extra\":[{\"text\":\"{Date}\",\"hoverEvent\":{\"action\":\"show_text\",\"value\":\"{Count} ago\"}},{\"text\":\".\"}]}]"
-      # No Json!!!
+      # 没有Json!
       DateFormat: "yyyy.MM.dd 'at' HH:mm:ss"
     List:
       Format: "&2{Player1DisplayName} <heart> &2{Player2DisplayName}"
@@ -111,7 +111,7 @@ Language:
         CanceledDisconnectRequester: "您伴侣下线了。传送请求已取消。"
         CanceledDisconnectTarget: "您伴侣下线了。传送请求已取消。"
     SetPriest:
-      # Options: {Name}, {DisplayName}.    Keep in mind display names contain colors!
+      # 名字变量选择: {Name}(显示名字|不带称号), {DisplayName}(显示名字|带称号).    请记住名称显示可以保持颜色！没有Json!
       MadeYouAPriest: "[\"\",{\"text\":\"{DisplayName}\"},{\"text\":\"雇佣您作为神父。\",\"color\":\"green\"}]"
       YouMadeAPriest: "[\"\",{\"text\":\"{DisplayName}\"},{\"text\":\"现在是个神父了。\",\"color\":\"green\"}]"
       FiredYou: "[\"\",{\"text\":\"{DisplayName}\"},{\"text\":\"被取消神父职位。\",\"color\":\"red\"}]"
@@ -128,7 +128,7 @@ Language:
       NothingToDeny: "[\"\",{\"text\":\"没有请求需要被拒绝。\",\"color\":\"red\"}]"
       NothingToCancel: "[\"\",{\"text\":\"没有请求需要被取消。\",\"color\":\"red\"}]"
     Marry:
-      # Options: {Name}, {DisplayName}.    Keep in mind display names contain colors!
+      # 名字变量选择: {Name}(显示名字|不带称号), {DisplayName}(显示名字|带称号).    请记住名称显示可以保持颜色！没有Json!
       NotWithHimself: "[{\"text\":\"您不可以和\",\"color\":\"red\"},{\"text\":\"{DisplayName}\"},{\"text\":\"在一起。\"}]"
       AlreadyMarried: "[{\"text\":\"您不可以和已经有伴侣的人在一起。\",\"color\":\"red\"},{\"text\":\"{DisplayName}\"},{\"text\":\"已经结婚了。\"}]"
       SurnameNeeded: "[\"\",{\"text\":\"您需要为您的伴侣添加一个姓氏。\",\"color\":\"red\"}]"
@@ -207,7 +207,7 @@ Language:
       Footer: "&c&m&l  &6&m&l  &e&m&l  &a&m&l  &b&m&l  &b&m&l  &a&m&l  &e&m&l  &6&m&l  &c&m&l    &b&m&l  &a&m&l  &e&m&l  &6&m&l  &c&m&l  "
   Commands:
     HelpFormat: "[\"\",{\"text\":\"/{MainCommand} {SubCommand} {Parameters}\",\"clickEvent\":{\"action\":\"suggest_command\",\"value\":\"/{MainCommand} {SubCommand}\"}},{\"text\":\" - \",\"color\":\"white\"},{\"text\":\"{Description}\",\"color\":\"aqua\"}]"
-    # No color codes please
+    # 请不要再这些名称上加上颜色！
     PlayerNameVariable: "玩家"
     PartnerNameVariable: "神父"
     SurnameVariable: "姓氏"
@@ -255,7 +255,7 @@ Dialog:
   Married: "我现在宣布您们是伴侣了,您们可以互相亲吻对方了a.a"
   YesIWant: "是的,我愿意!"
   NoIDontWant: 不,我不愿意!"
-# This selection allows to change the placeholder return values. You can change them if you like. https://github.com/GeorgH93/MarriageMaster/wiki/Placeholders
+# 此选择将允许替换PlaceholderAPI中显示的婚姻情况,用字符串进行表示. https://github.com/GeorgH93/MarriageMaster/wiki/Placeholders
 Placeholders:
   Boolean:
     True: "已婚"
