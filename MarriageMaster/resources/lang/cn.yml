@@ -166,7 +166,7 @@ Language:
       PlayerOff: "{DisplayName}&r 下线了，婚礼取消。"
       Self:
         NotYourself: "&c您不可以与您自己结婚。"
-        NotInRange: "[\"\",{\"text\":玩家不在范围内！Ta需要在{Range}格内！\",\"color\":\"red\"}]"
+        NotInRange: "&c玩家不在范围内！Ta需要在{Range}格内！"
         AlreadyMarried: "&c您已经和&r&c{DisplayName}&r&c结婚了！"
         OtherAlreadyMarried: "&c&r&c{DisplayName}&r&c 已经结婚了！"
         AlreadyOpenRequest: "&c您还未回复结婚请求。"
@@ -225,7 +225,7 @@ Language:
       # You can change this message if you like to, but don't cry if the link isn't linking to the plugin anymore!
       UpdateAvailable: "[{\"text\":\"插件有新的更新,请到\\\"\",\"color\":\"green\"},{\"text\":\"https://www.spigotmc.org/resources/19273/\",\"color\":\"yellow\",\"underlined\":true,\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://www.spigotmc.org/resources/19273/\"}},{\"text\":\"\\\" 进行更新!\"}]"
     Help:
-      Header: "&c&m&l  &6&m&l  &e&m&l  &a&m&l  &b&m&l  &f&l婚姻系统-指令&b&m&l  &a&m&l  &e&m&l  &6&m&l  &c&m&l   "
+      Header: "&c&m&l  &6&m&l  &e&m&l  &a&m&l  &b&m&l  &b&m&l  &a&m&l  &e&m&l  &6&m&l  &c&m&l    &b&m&l  &a&m&l  &e&m&l  &6&m&l  &c&m&l  "
       Footer: "&c&m&l  &6&m&l  &e&m&l  &a&m&l  &b&m&l  &b&m&l  &a&m&l  &e&m&l  &6&m&l  &c&m&l    &b&m&l  &a&m&l  &e&m&l  &6&m&l  &c&m&l  "
   Commands:
     HelpFormat: "[\"\",{\"text\":\"/{MainCommand} {SubCommand} {Parameters}\",\"clickEvent\":{\"action\":\"suggest_command\",\"value\":\"/{MainCommand} {SubCommand}\"}},{\"text\":\" - \",\"color\":\"white\"},{\"text\":\"{Description}\",\"color\":\"aqua\"}]"
